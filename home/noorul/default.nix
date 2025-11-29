@@ -27,7 +27,7 @@
 
   # User-specific packages
   home.packages = with pkgs; [
-    # Add user-specific packages here
+    claude-code
   ];
 
   # Program configurations
