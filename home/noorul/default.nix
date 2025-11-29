@@ -123,6 +123,11 @@
     };
   };
 
+  # Starship
+  programs.starship.enable = true;
+  programs.starship.enableZshIntegration = true;
+  programs.starship.settings = { command_timeout = 1800000; };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
