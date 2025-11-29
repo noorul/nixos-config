@@ -16,6 +16,15 @@
   # changes in each release.
   home.stateVersion = "25.05";
 
+  # Enable XDG directory management
+  xdg = {
+    enable = true;
+    userDirs = {
+      enable = true;
+      createDirectories = true;
+    };
+  };
+
   # User-specific packages
   home.packages = with pkgs; [
     # Add user-specific packages here
@@ -41,8 +50,8 @@
     shellAliases = {
       ll = "ls -l";
       la = "ls -la";
-      update = "sudo nixos-rebuild switch --flake /home/noorul/nixos-config#nomshaz";
-      nixconf = "cd /home/noorul/nixos-config";
+      update = "sudo nixos-rebuild switch --flake ${config.xdg.configHome}/nixos#nomshaz";
+      nixconf = "cd ${config.xdg.configHome}/nixos";
     };
 
     history = {

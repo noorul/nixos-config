@@ -16,6 +16,15 @@
   # changes in each release.
   home.stateVersion = "25.05";
 
+  # Enable XDG directory management
+  xdg = {
+    enable = true;
+    userDirs = {
+      enable = true;
+      createDirectories = true;
+    };
+  };
+
   # User-specific packages
   home.packages = with pkgs; [
     # Add user-specific packages here
