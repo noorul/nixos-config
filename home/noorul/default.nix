@@ -27,6 +27,9 @@
 
   # User-specific packages
   home.packages = with pkgs; [
+    # Development tools
+    claude
+
     # Add user-specific packages here
   ];
 
