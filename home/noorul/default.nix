@@ -38,7 +38,13 @@
     extraConfig = {
       init.defaultBranch = "main";
       pull.rebase = false;
+      github = { user = "noorul"; };
     };
+    ignores =
+      [
+        ".projectile"
+        ".dir-locals.el"
+      ];
   };
 
   programs.zsh = {
