@@ -30,6 +30,16 @@
     experimental-features = [ "nix-command" "flakes" ];
   };
 
+  # Automatic garbage collection to prevent /boot partition from filling up
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
+  # Optimize nix store automatically
+  nix.optimise.automatic = true;
+
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
 
