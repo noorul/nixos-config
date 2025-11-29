@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/users
     ];
 
   # Bootloader.
@@ -85,24 +86,8 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with 'passwd'.
+  # User accounts are defined in modules/users/default.nix
   # User-specific packages and configurations are managed by Home Manager in home/<username>/
-  users.users.noorul = {
-    isNormalUser = true;
-    description = "Noorul Islam K M";
-    shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
-  };
-  users.users.unreal = {
-    isNormalUser = true;
-    description = "Mr.Noman";
-    extraGroups = [ "networkmanager" "wheel" ];
-  };
-  users.users.shaz = {
-    isNormalUser = true;
-    description = "Chachu";
-    extraGroups = [ "networkmanager" "wheel" ];
-  };
 
   # Install firefox.
   programs.firefox.enable = true;
