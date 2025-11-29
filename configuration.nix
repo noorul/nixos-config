@@ -86,30 +86,22 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with 'passwd'.
+  # User-specific packages and configurations are managed by Home Manager in home/<username>/
   users.users.noorul = {
     isNormalUser = true;
     description = "Noorul Islam K M";
     shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      #  thunderbird
-    ];
   };
   users.users.unreal = {
     isNormalUser = true;
     description = "Mr.Noman";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      #  thunderbird
-    ];
   };
   users.users.shaz = {
     isNormalUser = true;
     description = "Chachu";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      #  thunderbird
-    ];
   };
 
   # Install firefox.
