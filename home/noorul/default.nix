@@ -64,12 +64,6 @@
       size = 10000;
       path = "${config.home.homeDirectory}/.zsh_history";
     };
-
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "git" "sudo" "docker" "kubectl" ];
-      theme = "robbyrussell";
-    };
   };
 
   programs.tmux = {
