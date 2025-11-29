@@ -21,6 +21,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.backupFileExtension = "backup";
           home-manager.users.noorul = import ./home/noorul;
           home-manager.users.unreal = import ./home/unreal;
           home-manager.users.shaz = import ./home/shaz;
