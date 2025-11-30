@@ -289,6 +289,7 @@ When adding new functionality:
    - `Enable service Z for user A`
    - `Refactor: Extract GNOME config to module`
    - `Fix: Resolve audio issue with PipeWire`
+   - **NEVER include** "Generated with Claude Code" or "Co-Authored-By: Claude" lines
 
 3. **Atomic commits**: One logical change per commit
 4. **Push regularly**: Push to remote after completing features
