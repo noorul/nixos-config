@@ -28,6 +28,7 @@
   # User-specific packages
   home.packages = with pkgs; [
     claude-code
+    ledger
   ];
 
   # Program configurations
