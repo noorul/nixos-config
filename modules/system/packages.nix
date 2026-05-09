@@ -30,8 +30,11 @@
 
     # Applications
     brave
+  ];
 
-    # Fonts
+  fonts.packages = with pkgs; [
     iosevka-bin
+    (iosevka-bin.override { variant = "SS05"; })   # Emacs fixed-pitch font
+    (iosevka-bin.override { variant = "Etoile"; }) # Emacs variable-pitch font
   ];
 }
