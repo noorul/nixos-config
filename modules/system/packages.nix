@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     # Terminal & Shell
     alacritty
+    ghostty
     tmux
     mosh
 
@@ -15,7 +16,7 @@
     git
     gnumake
     libtool
-    emacs30-gtk3
+    emacs30
     nodejs
     vim
 
