@@ -16,6 +16,7 @@
     gnumake
     libtool
     emacs30-gtk3
+    nodejs
     vim
 
     # System Utilities
