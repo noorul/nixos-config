@@ -30,6 +30,7 @@
 
     # Applications
     brave
+    google-chrome
   ];
 
   fonts.packages = with pkgs; [
