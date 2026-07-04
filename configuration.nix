@@ -25,6 +25,7 @@
       # Services
       ./modules/services/networking.nix
       ./modules/services/desktop-apps.nix
+      ./modules/services/emacs.nix
 
       # Programs
       ./modules/programs

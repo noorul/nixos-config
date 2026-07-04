@@ -16,7 +16,6 @@
     git
     gnumake
     libtool
-    emacs30
     nodejs
     vim
 
