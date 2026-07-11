@@ -12,6 +12,9 @@
       # User accounts
       ./modules/users
 
+      # Hardware
+      ./modules/hardware/nvidia.nix
+
       # Desktop environment
       ./modules/desktop/gnome.nix
       ./modules/desktop/audio.nix
