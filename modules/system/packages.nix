@@ -19,6 +19,10 @@
     nodejs
     vim
 
+    # Kubernetes / Container Tools
+    kind
+    kubectl
+
     # System Utilities
     curl
     fd

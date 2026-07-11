@@ -6,7 +6,7 @@
     isNormalUser = true;
     description = "Noorul Islam K M";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
   };
 
   users.users.unreal = {

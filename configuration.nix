@@ -28,6 +28,7 @@
       # Services
       ./modules/services/networking.nix
       ./modules/services/desktop-apps.nix
+      ./modules/services/docker.nix
       ./modules/services/emacs.nix
 
       # Programs
