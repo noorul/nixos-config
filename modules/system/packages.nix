@@ -35,6 +35,11 @@
 
     # Media
     imagemagick
+
+    # LaTeX (for org-mode PDF export)
+    (texlive.combine {
+      inherit (texlive) scheme-medium collection-latexextra;
+    })
   ];
 
   fonts.packages = with pkgs; [
