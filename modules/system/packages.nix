@@ -32,6 +32,9 @@
     # Applications
     brave
     google-chrome
+
+    # Media
+    imagemagick
   ];
 
   fonts.packages = with pkgs; [
