@@ -22,6 +22,7 @@
     userDirs = {
       enable = true;
       createDirectories = true;
+      setSessionVariables = true;
     };
   };
 
@@ -33,9 +34,9 @@
   # Basic program configurations
   programs.git = {
     enable = true;
-    userName = "Mr.Noman";
-    userEmail = "unreal@example.com";
-    extraConfig = {
+    settings = {
+      user.name = "Mr.Noman";
+      user.email = "unreal@example.com";
       init.defaultBranch = "main";
       pull.rebase = false;
     };

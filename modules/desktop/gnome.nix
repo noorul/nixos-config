@@ -5,9 +5,9 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.displayManager.gdm.autoSuspend = false;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
+  services.displayManager.gdm.autoSuspend = false;
+  services.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -23,7 +23,7 @@
   # Mutter fails to repaint text (empty password/search fields, scrambled
   # tiles). Disable auto screen-blank and lock until the driver bug is
   # fixed upstream.
-  services.xserver.desktopManager.gnome.extraGSettingsOverrides = ''
+  services.desktopManager.gnome.extraGSettingsOverrides = ''
     [org.gnome.desktop.session]
     idle-delay=uint32 0
 
@@ -35,7 +35,7 @@
     sleep-inactive-battery-type='nothing'
   '';
 
-  services.xserver.desktopManager.gnome.extraGSettingsOverridePackages = [
+  services.desktopManager.gnome.extraGSettingsOverridePackages = [
     pkgs.gsettings-desktop-schemas
     pkgs.gnome-settings-daemon
   ];

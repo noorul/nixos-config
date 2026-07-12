@@ -22,6 +22,7 @@
     userDirs = {
       enable = true;
       createDirectories = true;
+      setSessionVariables = true;
     };
   };
 
@@ -34,9 +35,9 @@
   # Program configurations
   programs.git = {
     enable = true;
-    userName = "Noorul Islam K M";
-    userEmail = "noorul@noorul.com";
-    extraConfig = {
+    settings = {
+      user.name = "Noorul Islam K M";
+      user.email = "noorul@noorul.com";
       init.defaultBranch = "main";
       pull.rebase = false;
       github = { user = "noorul"; };
@@ -50,6 +51,7 @@
 
   programs.zsh = {
     enable = true;
+    dotDir = config.home.homeDirectory;
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
