@@ -12,6 +12,7 @@
 
     # Development Tools
     cmake
+    devenv
     gcc
     git
     gnumake
