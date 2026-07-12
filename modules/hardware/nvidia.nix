@@ -11,6 +11,9 @@
     open = true;
     modesetting.enable = true;
     powerManagement.enable = true;
+    # Keeps GPU state alive across DPMS/screen-blank so Mutter
+    # doesn't lose its texture cache and repaint garbage.
+    nvidiaPersistenced = true;
     nvidiaSettings = true;
   };
 
